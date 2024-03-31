@@ -14,22 +14,19 @@ An API call is a request made by one software application to another, typically 
 
 This project features an automatic system that gathers data from a third party source (open weather) and store in a data lake that will be use later for other purpose. This gathering of data occurs daily to update on current day weather data. This can be useful for companies or individual who needs to use daily weather data for their purpose (for example: weather forecast or make decisions based on current weather conditions like airflight control)
 
-<b>Source of data: </b> [https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download](https://openweathermap.org/api)
+<b>Open Weather API: </b> [https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download](https://openweathermap.org/api)
 
 Data includes a single csv file : <b> <i> Telco_customer_churn.csv </i> </b>
-
-But I split it into 3 seperate files ( <b> <i> Telco_customer_churn1.csv,Telco_customer_churn2.csv,Telco_customer_churn3.csv </i> </b>) to mimic real life usage as there might be multiple data sources and the pipeline should also be able to assemble the data (AWS Glue).
 
 ### Technologies used
 - Python
 - Airflow
-- AWS services: EC2, S3, Glue Crawler, Glue Data Catalog, Redshift
-- PowerBI 
+- AWS services: EC2, S3
 
 ## 2. Implementation overview 
-An ETL pipeline to collect raw data into actionable insights to store them in Amazon S3 for staging. Then implement another Airflow (hosted with EC2) ETL pipeline which process data from S3 and load them to Amazon Glue Crawler for analyzing data structure and schema, which are then stored in Amazon Glue Data Catalog. After that, Airflow delivers the structured data to Amazon Redshift (Data warehouse) and ultimately loaded from there to powerBI for visualization. Amazon Athena is also used for querying data directly from s3 and it is just for checking purpose. 
+An ETL pipeline to collect raw data from Open Weather API. After that, the data is transform to fit with csv format and remove redundant information. Afterward, the data is loaded to Amazon s3 Data Lake.
+![architecture](https://github.com/minWang916/weatherDataRetrieval/assets/116493016/1eaeef81-7168-44a5-ba58-fd7242811d4e)
 
-![System design](https://github.com/minWang916/Batch-processing/assets/116493016/e49939ec-48cd-440c-9d3a-938a690ff270)
 
 
 
