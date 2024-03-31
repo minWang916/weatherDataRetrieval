@@ -34,10 +34,9 @@ An ETL pipeline to collect raw data from Open Weather API. After that, the data 
 ## 3. Design 
 
 #### Airflow system
-![Untitled](https://github.com/minWang916/Batch-processing/assets/116493016/34bbeb8b-2d04-4919-9507-568b6fbf0ad5)
+![graph](https://github.com/minWang916/weatherDataRetrieval/assets/116493016/b27a011e-ece6-48c7-8dce-5ee1d4b36e29)
 
-#### Statistical charts and graphs
-![graphs](https://github.com/minWang916/Batch-processing/assets/116493016/4daf2f09-a2d0-4747-8c61-ffc1d410573c)
+
 
 
 
