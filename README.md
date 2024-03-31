@@ -6,7 +6,6 @@
 1. [Introduction](#1-introduction)
    - [Technologies used](#technologies-used)
 3. [Implementation Overview](#2-implementation-overview)
-4. [Design](#3-design)
 
 
 ## 1. Introduction 
@@ -41,22 +40,3 @@ An ETL pipeline to collect raw data from Open Weather API. After that, the data 
 
 
 
-
-
-## 4. Project Structure
-
-```bash
-
-Batch-Processing/
-  ├── data/
-  │   ├── Telco_customer_churn.csv
-  │   ├── Telco_customer_churn.xlsx
-  │   │── Telco_customer_churn1.csv
-  │   │── Telco_customer_churn2.csv
-  │   │── Telco_customer_churn3.csv
-  │── customer_churn_dag.py 
-  │── requirements.txt  
-  │── README.md   
-
-```
-<br>
