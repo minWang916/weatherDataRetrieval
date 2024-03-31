@@ -6,7 +6,7 @@
 1. [Introduction](#1-introduction)
    - [Technologies used](#technologies-used)
 3. [Implementation Overview](#2-implementation-overview)
-
+4. [Design](#3-design)
 
 ## 1. Introduction 
 An API call is a request made by one software application to another, typically over a network, to access its functionality or retrieve data. It enables different software systems to communicate and interact with each other, facilitating integration and interoperability.
