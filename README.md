@@ -1,6 +1,6 @@
-# weatherDataScrapper
 
-# Batch processing: ETL pipeline, data modeling, warehousing and visualization of Telco customer churn (IBM dataset)
+
+# Weather Data Retrieval: API call, ETL pipeline, data lake
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -10,9 +10,11 @@
 
 
 ## 1. Introduction 
-Batch processing is a method of processing data where a group of data items is collected, processed, and executed together as a single unit. Instead of processing individual transactions in real-time, batch processing allows for the processing of multiple transactions at once, usually in a sequential manner. In this case, I use the data from Telco company customer data and work as a data engineer who collects the data batch after a period of time and analyse the data. The job consists of producing a data pipeline to gather the data from data source, store it in a datawarehouse and furher use it for analytical purpose.
+An API call is a request made by one software application to another, typically over a network, to access its functionality or retrieve data. It enables different software systems to communicate and interact with each other, facilitating integration and interoperability.
 
-<b>Source of data: </b> https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download
+This project features an automatic system that gathers data from a third party source (open weather) and store in a data lake that will be use later for other purpose. This gathering of data occurs daily to update on current day weather data. This can be useful for companies or individual who needs to use daily weather data for their purpose (for example: weather forecast or make decisions based on current weather conditions like airflight control)
+
+<b>Source of data: </b> [https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download](https://openweathermap.org/api)
 
 Data includes a single csv file : <b> <i> Telco_customer_churn.csv </i> </b>
 
